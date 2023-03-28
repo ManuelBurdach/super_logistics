@@ -25,3 +25,8 @@
   margin: 10px 20px;
   background-color: antiquewhite;
 }
+
+.LkwForm input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

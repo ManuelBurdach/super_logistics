@@ -25,31 +25,21 @@ app.get("/api/v1/lkw", (req, res) => {
 });
 
 //POST
-app.post(
-  "/api/v1/lkw",
-  body("hersteller")
-    .isLength({ min: 1, max: 10 })
-    .withMessage("Hersteller muss min. einen und max. 10 Buchstaben enthalten!")
-    .bail()
-    .isNumeric()
-    .withMessage("Es sind nur Buchstaben erlaubt!")
-    .bail(),
-  (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      console.log(errors.array());
-      return res.status(200).json([{ error: errors.array() }]);
-    }
-
-    const lkw = req.body;
-    save(lkw)
-      .then((data) => res.json(data))
-      .catch((err) => {
-        console.log(err);
-        res.status(500).end();
-      });
+app.post("/api/v1/lkw", body("hersteller").isLength({ min: 1, max: 10 }), (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    console.log(errors.array());
+    return res.status(200).json([{ error: errors.array() }]);
   }
-);
+
+  const lkw = req.body;
+  save(lkw)
+    .then((data) => res.json(data))
+    .catch((err) => {
+      console.log(err);
+      res.status(500).end();
+    });
+});
 
 //Server auf PORT lauschen lassen
 app.listen(PORT, () => {

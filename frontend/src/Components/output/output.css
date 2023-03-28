@@ -7,8 +7,13 @@
   width: 200px;
 }
 
+.Output:hover {
+  opacity: 0.8;
+}
+
 .Output p:first-child {
   background-color: orange;
+  padding: 10px;
 }
 
 .Output p {
