@@ -14,7 +14,7 @@ export const save = (item) => {
   return new Promise((resolve, reject) => {
     load().then((data) => {
       data.push(item);
-      fs.writeFile(DB_PATH, JSON.stringify(data), (err) => {
+      fs.writeFile(DB_PATH, JSON.stringify(data, null, 2), (err) => {
         if (err) reject(err);
         else resolve(data);
       });

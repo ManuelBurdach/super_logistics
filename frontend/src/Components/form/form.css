@@ -1,0 +1,27 @@
+.LkwForm {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 300px;
+  margin: 30px auto;
+}
+
+.LkwForm > * {
+  margin: 10px;
+}
+
+.LkwForm input {
+  line-height: 35px;
+  border-radius: 3px;
+  text-align: center;
+  box-shadow: 0 0 5px black;
+  border: 1px solid darkgray;
+  background-color: white;
+  color: black;
+}
+
+.LkwForm input[type="submit"] {
+  margin: 10px 20px;
+  background-color: antiquewhite;
+}

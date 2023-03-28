@@ -1,0 +1,20 @@
+.Output {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+.Output p:first-child {
+  background-color: orange;
+}
+
+.Output p {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: antiquewhite;
+  color: black;
+}

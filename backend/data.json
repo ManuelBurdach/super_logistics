@@ -1,1 +1,42 @@
-[{"last":40},{"last":40}]
+[
+  {
+    "hersteller": "abc",
+    "fahrgestellnummer": "",
+    "kilometer": "",
+    "kennzeichen": "",
+    "last": "",
+    "farbe": ""
+  },
+  {
+    "hersteller": "abc",
+    "fahrgestellnummer": "",
+    "kilometer": "",
+    "kennzeichen": "",
+    "last": "",
+    "farbe": ""
+  },
+  {
+    "hersteller": "123a",
+    "fahrgestellnummer": "",
+    "kilometer": "",
+    "kennzeichen": "",
+    "last": "",
+    "farbe": ""
+  },
+  {
+    "hersteller": "123",
+    "fahrgestellnummer": "",
+    "kilometer": "",
+    "kennzeichen": "",
+    "last": "",
+    "farbe": ""
+  },
+  {
+    "hersteller": "123",
+    "fahrgestellnummer": "",
+    "kilometer": "",
+    "kennzeichen": "",
+    "last": "",
+    "farbe": ""
+  }
+]
